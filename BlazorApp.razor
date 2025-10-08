@@ -1,0 +1,13 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+
+<Router AppAssembly="@typeof(BlazorApp).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" />
+    </Found>
+    <NotFound>
+        <div class="text-center p-5">
+            <h3>Page not found</h3>
+            <a href="/" class="btn btn-brand mt-3">Go Home</a>
+        </div>
+    </NotFound>
+</Router>
